@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #00bbf0; 
+  overflow: hidden;
+  
+}
+
+.page-header{
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#chatHistory{
+  min-width: 400px ;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  background: #00204a; 
+  overflow: scroll;
+  overflow-x: hidden;
+  
+}
+
+.user,.assistant{
+
+  padding:2px;
+  width: 100vw;
+  display:flex;
+  
+  align-items: center;
+  font-size: large;
+  margin-left: 30px;
+  margin-top:20px;
+  margin-bottom: 35px;
+
+}
+.user {
+  justify-content: flex-end;
+}
+
+.assistant > div{
+  background-color: aliceblue;
+  width: fit-content;
+  overflow-wrap: break-word;
+  padding: 25px;
+  min-width: 30px;
+  text-align: start;
+  margin-left: 20px;
+  border-radius:20px;
+  min-width: 150px;
+  max-width: 40vw;
+}
+ label{
+  color: white;
+}
+
+.btn-warning {
+  color:black!important; 
+  font-size: large!important; 
+}
+.user > div{
+  
+  text-align: start;
+  background-color: aliceblue;
+  width: fit-content;
+  overflow-wrap: break-word;
+  padding: 25px;
+  min-width: 30px;
+  max-width: 40vw;
+  border-radius:20px;
+  margin-right: 100px;
+  margin-left: 20px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+label{
+  font-size: x-large;
+}
+form{
+  background-color: #00204a; 
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding-bottom: 70px;
+  padding-top: 25px;
+  overflow: hidden;
+}
+#textInput{
+  overflow: hidden;
+  font-size: large;
+  resize: none;
+  max-height: 90px;
+  
+
+}
+#textInputScroll{
+  overflow-y: scroll;
+  font-size: large;
+  resize: none;
+  max-height: 90px;
+}
+
+button{
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  border-style: none;
+ 
+  
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
